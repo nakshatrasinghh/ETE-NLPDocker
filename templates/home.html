@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<!-- *SHEETS* -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>	
+</head>
+<body>
+	<header>
+		<!-- *SUB-HEADING* -->
+		<div class="container">
+		<div class="app">
+		<h2 class="Sentiment">Twitter Sentiment Analysis, Negative or Positive</h2>
+	</header>
+
+	<div class="ml-container">
+		<form action="{{ url_for('predict')}}" method="POST">
+
+		<h2 class="message">Enter Your Message Here 👇</h2>
+		<!-- *BOX* -->
+		<div align="center">
+		<textarea name="message" placeholder="Type here...." rows="10" cols="80" required></textarea>
+		<br>
+		<br>
+		<!-- *BUTTON* -->
+		<div align="center"> 
+		<button type="submit" class="btn-submit">Predict</button>
+		</form>
+	</div>	
+	<!-- *Footer* -->
+	<div align="center" class="footer">
+		<div class="contact">
+			<!-- *ICONS* -->
+			<a target="_blank" href="https://github.com/nakshatrasinghh"><i class="fab fa-github fa-2x contact-icon"></i></a>
+			<a target="_blank" href="https://www.linkedin.com/in/nakshatrasinghh/"><i class="fab fa-linkedin fa-2x contact-icon"></i></a>
+			<a target="_blank" href="https://wa.link/8bt67v"><i class="fab fa-whatsapp fa-2x contact-icon"></i></a>
+			<a target="_blank" href="https://medium.com/@nakshatradsml"><i class="fab fa-medium fa-2x contact-icon"></i></a>
+			<a target="_blank" href="https://hub.docker.com/u/nakshatrasinghh"><i class="fab fa-docker fa-2x contact-icon"></i></a>
+		</div>
+	</div>
+	<p align="center">Made with ❤️ by Nakshatra Singh.</p>
+</body>
+</html>
