@@ -3,9 +3,51 @@
 <head>
 	<title>Home</title>
 	<!-- *SHEETS* -->
-	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>	
+	<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+
+	<style>
+		body{
+    background: linear-gradient(+45deg, #d86543, #a73694da, #3a93b4, #40ccabb7 );
+	background-size: 400% 400%;
+	-webkit-animation: gradientbg 7s ease-in infinite;
+			animation: gradientbg 7s ease-in infinite;
+	}
+
+	@-webkit-keyframes gradientbg {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+	
+	}
+	@keyframes gradientbg {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+
+	}
+	.contact-icon{
+	color:black;
+	padding:7px;
+	}
+
+	.contact-icon:hover{
+	color:rgb(163, 160, 160);
+	}
+	</style>	
+
 </head>
 <body>
 	<header>
@@ -13,13 +55,13 @@
 		<div class="container">
 		<div class="app">
 		<h1 align="center">ML Sentiment Analysis App built with Flask</h1>
-		<h2 class="Sentiment">Twitter Sentiment Analysis, Negative or Positive</h2>
+		<h2 class="Sentiment" align="center">Twitter Sentiment Analysis, Negative or Positive</h2>
 	</header>
 
 	<div class="ml-container">
 		<form action="{{ url_for('predict')}}" method="POST">
 
-		<h2 class="message">Enter Your Message Here 👇</h2>
+		<h2 class="message" align="center">Enter Your Message Here 👇</h2>
 		<!-- *BOX* -->
 		<div align="center">
 		<textarea name="message" placeholder="Type here...." rows="10" cols="80" required></textarea>
@@ -32,7 +74,7 @@
 	</div>	
 	<!-- *Footer* -->
 	<div align="center" class="footer">
-		<div class="contact">
+		<div class="contact" style="margin-top:25px;">
 			<!-- *ICONS* -->
 			<a target="_blank" href="https://github.com/nakshatrasinghh"><i class="fab fa-github fa-2x contact-icon"></i></a>
 			<a target="_blank" href="https://www.linkedin.com/in/nakshatrasinghh/"><i class="fab fa-linkedin fa-2x contact-icon"></i></a>
@@ -41,6 +83,6 @@
 			<a target="_blank" href="https://hub.docker.com/u/nakshatrasinghh"><i class="fab fa-docker fa-2x contact-icon"></i></a>
 		</div>
 	</div>
-	<p align="center">Made with ❤️ by Nakshatra Singh.</p>
+	<p align="center" style="font-size:25px; font-weight:700;">Made with ❤️ by Nakshatra Singh.</p>
 </body>
 </html>

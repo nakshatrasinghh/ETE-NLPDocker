@@ -1,13 +1,54 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Results</title>
-		<!-- *SHEETS* -->
-		<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="styles.css">
-		<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
-	</head>
+<head>
+	<title>Results</title>
+	<!-- *SHEETS* -->
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
 
+	<style>
+		body{
+    background: linear-gradient(-45deg, #d86543, #a73694da, #3a93b4, #40ccabb7 );
+	background-size: 400% 400%;
+	-webkit-animation: gradientbg 7s ease-in infinite;
+			animation: gradientbg 7s ease-in infinite;
+	}
+
+	@-webkit-keyframes gradientbg {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+
+	}
+	@keyframes gradientbg {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+
+	}
+	.contact-icon{
+	color:black;
+	padding:7px;
+	}
+
+	.contact-icon:hover{
+	color:rgb(163, 160, 160);
+	}
+	</style>
+
+</head>
 <body>
 	<h1 class= "sensitive" align="center">Sensitive Analysis Report</h1>
 	<h2 class= "twitts" align="center">Twitter Sensitivity Detector App - Flask</h2>
@@ -16,9 +57,9 @@
 	<br>
 
 	{% if prediction == 0%}
-	<h2 align="center"class="negative">A Negative Comment</h2>
+	<h2 align="center"class="negative"style="color: red";>A Negative Comment</h2>
 	{% elif prediction == 1%}
-	<h2 align="center"class="positive">A Positive Comment</h2>
+	<h2 align="center"class="positive"style="color: green;">A Positive Comment</h2>
 	{% endif %}
 
 	<!-- *Footer* -->
@@ -32,7 +73,7 @@
 			<a target="_blank" href="https://hub.docker.com/u/nakshatrasinghh"><i class="fab fa-docker fa-2x contact-icon"></i></a>
 		</div>
 	</div>
-	<p align="center">Made with ❤️ by Nakshatra Singh.</p>
+	<p align="center" style="font-size:25px; font-weight:700;">Made with ❤️ by Nakshatra Singh.</p>
 
 </body>
 </html> 
