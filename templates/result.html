@@ -50,20 +50,20 @@
 
 </head>
 <body>
-	<h1 class= "sensitive" align="center">Sensitive Analysis Report</h1>
-	<h2 class= "twitts" align="center">Twitter Sensitivity Detector App - Flask</h2>
+	<h1 align="center">Sensitive Analysis Report</h1>
+	<h2 align="center">Twitter Sensitivity Detector App - Flask</h2>
 	<br>
-	<p class="comments" align="center"><b>Results for Comment 👇</b></p>
+	<h4  align="center" style="font-size: 24px;">Results for Comment 👇</h4>
 	<br>
 
 	{% if prediction == 0%}
-	<h2 align="center"class="negative"style="color: red";>A Negative Comment</h2>
+	<h2 align="center" style="color: red";>A Negative Comment</h2>
 	{% elif prediction == 1%}
-	<h2 align="center"class="positive"style="color: green;">A Positive Comment</h2>
+	<h2 align="center" style="color: green;">A Positive Comment</h2>
 	{% endif %}
 
 	<!-- *Footer* -->
-	<div align="center" class="footer">
+	<div align="center" style="margin-top: 100px;">
 		<div class="contact2">
 			<!-- *ICONS* -->
 			<a target="_blank" href="https://github.com/nakshatrasinghh"><i class="fab fa-github fa-2x contact-icon"></i></a>

@@ -58,7 +58,7 @@
     box-shadow: 3px 3px #131313;
     height:28px;
 	}
-	
+
 	.btn-submit:hover{
 	background-color:#d6cacad8;
 	transition: all .5s ease 0s;
@@ -68,17 +68,15 @@
 </head>
 <body>
 	<header>
-		<!-- *SUB-HEADING* -->
-		<div class="container">
-		<div class="app">
+		<!-- *HEADING* -->
 		<h1 align="center">ML Sentiment Analysis App built with Flask</h1>
-		<h2 class="Sentiment" align="center">Twitter Sentiment Analysis, Negative or Positive</h2>
+		<h2 align="center">Twitter Sentiment Analysis, Negative or Positive</h2>
 	</header>
 
 	<div class="ml-container">
 		<form action="{{ url_for('predict')}}" method="POST">
 
-		<h2 class="message" align="center">Enter Your Message Here 👇</h2>
+		<h2 align="center">Enter Your Message Here 👇</h2>
 		<!-- *BOX* -->
 		<div align="center">
 		<textarea name="message" placeholder="Type here...." rows="10" cols="80" required></textarea>
@@ -90,8 +88,8 @@
 		</form>
 	</div>	
 	<!-- *Footer* -->
-	<div align="center" class="footer">
-		<div class="contact" style="margin-top:25px;">
+	<div align="center" style="margin-top: 100px;">
+		<div class="contact">
 			<!-- *ICONS* -->
 			<a target="_blank" href="https://github.com/nakshatrasinghh"><i class="fab fa-github fa-2x contact-icon"></i></a>
 			<a target="_blank" href="https://www.linkedin.com/in/nakshatrasinghh/"><i class="fab fa-linkedin fa-2x contact-icon"></i></a>
