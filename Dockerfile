@@ -1,18 +1,20 @@
-FROM frolvlad/alpine-python-machinelearning:latest
+#@ Uses a base python3.7.5 slim image as the base OS kernel
+FROM python:3.7.9-slim
 
-RUN pip install --upgrade pip
-
+#@ Make an app folder
 WORKDIR /app
 
+#@ Copy all the files inside of the app folder
 COPY . /app
-RUN apk add build-base
-RUN apk add --no-cache --virtual .build-deps g++ python3-dev libffi-dev openssl-dev && \
-    apk add --no-cache --update python3 && \
-    pip3 install --upgrade pip setuptools
+
+#@ Install the requirements
 RUN pip3 install -r requirements.txt
-RUN python -m nltk.downloader punkt
+
+#@ Exposing 4000 port
 EXPOSE 4000
 
+#@ Command to use and open python shell
 ENTRYPOINT  ["python"]
 
+#@ Execute `main.py` file with ENTRYPOINT during runtime 
 CMD ["main.py"]

@@ -1,3 +1,5 @@
+/* ===============* HOME PAGE CSS *=============== */
+
 *{
     font-family: 'Baloo Bhai 2', cursive;
 }
@@ -8,14 +10,6 @@ html{
 .Sentiment{
     color: #111111;
     text-align: center;
-}
-/* HEADING */
-header .app:before{
-    content:'Machine Learning Sentiment Analysis App built with Flask';
-    color:transparent;
-    -webkit-text-stroke:3px #0e0d0dd3;
-    font-size: 42px;
-    margin-left:150px;
 }
 .message{
     color: #050505;
@@ -81,7 +75,9 @@ body{
 	-webkit-animation: gradientbg 11s ease-in infinite;
 	        animation: gradientbg 11s ease-in infinite;
 }
-/* ================================================= */
+
+/* ===============* RESULTS PAGE CSS *=============== */
+
 .twitts{
     color:#111111;
 	margin-top: 10px;
@@ -104,7 +100,7 @@ body{
 	font-size: 30px;
 }
 .contact2{
-    margin-top:208px;
+    margin-top:245px;
 }
 .contact-icon{
     color: #000000;
@@ -117,4 +113,3 @@ p{
     margin-top:15px;
     font-size:22px;
 }
-
