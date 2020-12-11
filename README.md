@@ -18,6 +18,14 @@ For this project, I have used the Twitter sentiment dataset. It consists of 2000
 
 ![](imgs/train.png)
 
+## Web Application
+
+The web application was build using inline html styling and rendered using [flask utility functions](https://flask.palletsprojects.com/en/1.1.x/api/#flask.render_template). By clicking on predict, the application will predict whether the comment is a negative or positive comment. Along the footer, I have added all my social icons using [fontawesome js](https://kit.fontawesome.com/5f3f547070.js) kit. HTML-css inlined code for home and result pages can be found [here](https://github.com/nakshatrasinghh/ETE-NLPDocker/tree/master/templates).
+
+![](imgs/home.png)
+
+![](imgs/result.png)
+
 ## Dockerfile
 
 To create docker images and run them in containers, you need to have a [dockerfile](https://github.com/nakshatrasinghh/ETE-NLPDocker/blob/master/Dockerfile) which includes all the commands to be executed sequential for the application to run in the base OS kernel (in this case, Ubuntu). Firstly, we'll use a basic linux OS kernel with [python 3.7.9](https://hub.docker.com/_/python) (keeps the image size small and very portable across different computers). 
@@ -51,14 +59,6 @@ Docker [login command](https://docs.docker.com/engine/reference/commandline/logi
 Docker [push command](https://docs.docker.com/engine/reference/commandline/push/) will push the staged changes to docker cloud.
 
 ![](imgs/docker_hub.png)
-
-## Web Application
-
-The web application was build using inline html styling and rendered using [flask utility functions](https://flask.palletsprojects.com/en/1.1.x/api/#flask.render_template). By clicking on predict, the application will predict whether the comment is a negative or positive comment. Along the footer, I have added all my social icons using [fontawesome js](https://kit.fontawesome.com/5f3f547070.js) kit. HTML-css inlined code for home and result pages can be found [here](https://github.com/nakshatrasinghh/ETE-NLPDocker/tree/master/templates).
-
-![](imgs/home.png)
-
-![](imgs/result.png)
 
 ## Docker Hub
 Click the icon below to checkout the docker registry, just execute **`docker run -d -p 5000:4000 nakshatrasinghh/ete-nlp-docker-webapp`** on cmd, the application will run on **`localhost:5000`**. After running the image, open a chrome tab, and type **`localhost:5000`**. Your application is ready to use, without downloading any dependencies, you can run an end-to-end web application. Make sure you have [docker](https://hub.docker.com/editions/community/docker-ce-desktop-windows/) installed, that's the only thing you'll need to run the application in your local workspace.
