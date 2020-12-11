@@ -20,7 +20,7 @@ For this project, I have used the Twitter sentiment dataset. It consists of 2000
 
 ## Web Application
 
-The web application was build using inline html styling and rendered using [flask utility functions](https://flask.palletsprojects.com/en/1.1.x/api/#flask.render_template). By clicking on predict, the application will predict whether the comment is a negative or positive comment. Along the footer, I have added all my social icons using [fontawesome js](https://kit.fontawesome.com/5f3f547070.js) kit. HTML-css inlined code for home and result pages can be found [here](https://github.com/nakshatrasinghh/ETE-NLPDocker/tree/master/templates).
+The web application was build using inline html styling and rendered using [flask utility functions](https://flask.palletsprojects.com/en/1.1.x/api/#flask.render_template). By clicking on predict, the application will predict whether the comment is a negative or positive comment. Along the footer, I have added all my social icons using [fontawesome js](https://kit.fontawesome.com/5f3f547070.js) kit. Webapp code for [home](https://github.com/nakshatrasinghh/ETE-NLPDocker/blob/master/templates/home.html) and [result](https://github.com/nakshatrasinghh/ETE-NLPDocker/blob/master/templates/result.html) page can be found [here](https://github.com/nakshatrasinghh/ETE-NLPDocker/tree/master/templates).
 
 ![](imgs/home.png)
 
