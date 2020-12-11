@@ -28,9 +28,9 @@ The web application was build using inline html styling and rendered using [flas
 
 ## Dockerfile
 
-To create docker images and run them in containers, you need to have a [dockerfile](https://github.com/nakshatrasinghh/ETE-NLPDocker/blob/master/Dockerfile) which includes all the commands to be executed sequential for the application to run in the base OS kernel (in this case, Ubuntu). Firstly, we'll use a basic linux OS kernel with [python 3.7.9](https://hub.docker.com/_/python) (keeps the image size small and very portable across different computers). 
+To create docker images and run them in containers, you need to have a [dockerfile](https://github.com/nakshatrasinghh/ETE-NLPDocker/blob/master/Dockerfile) which includes all the commands to be executed sequential for the application to run in the base OS kernel (in this case, Ubuntu). Firstly, we'll use a basic linux OS kernel with [python 3.7.9-slim edition](https://hub.docker.com/_/python) (keeps the image size small and very portable across different computers). 
 
-⚠️***This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images.*** ⚠️
+⚠️***This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run python. Unless you are working in an environment where only the python image will be deployed and you have space constraints, it's highly recommend using the default image of this repository.*** ⚠️
 
 ![](imgs/docker.png)
 
